@@ -1,0 +1,638 @@
+.app-container
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    box-sizing: border-box
+    background-color: #71BFFF
+.app
+    width: 1160px
+    display: flex
+.view
+    width: 368px
+    padding: 77px 106px 94px 118px
+    background-color: #fff
+.view__icons
+    height: 170px
+    margin-bottom: 73px
+    display: flex
+    flex-wrap: wrap
+.view__icon
+    margin-right: 10px
+    background-color: #0978CF
+    border-radius: 5px
+    color: #fff
+.junior
+    height: 20px
+    padding: 10px 14px
+    font-size: 18px
+.middle
+    height: 15px
+    padding: 8px 12px
+    font-size: 18px
+    line-height: 16px
+.senior
+    height: 12px
+    padding: 5px 10px
+    font-size: 16px   
+    line-height: 10px   
+.view__guy 
+    height: 303px
+    position: relative
+    img
+        position: absolute
+        &.body
+            height: 277px
+            width: 202px
+            left: 81px
+        &.face
+            top: 57px
+            left: 140px
+            height: 44px
+            width: 81px
+        &:last-of-type
+            bottom: 0
+            height: 130px
+            width: 100%
+.controllers
+    width: 500px
+    padding: 98px 40px 90px
+    background-color: #BDE5F8           
+.rangeController
+    margin-bottom: 58px
+.rangeController__title
+    height: 25px
+    margin-bottom: 30px
+    font-size: 25px
+    font-weight: bold
+    line-height: 1.2
+.rangeController__item
+    height: 230px
+    width: 420px
+    padding: 0 40px 42px
+    background-color: #fff
+    input
+        margin-top: 51px
+        margin-bottom: 38px
+    input[type='range'] 
+        width: 100%
+        -webkit-appearance: none
+        cursor: pointer
+        background-color: #d1e3f2 
+        height: 4px   
+        margin-left: 0
+        &::-webkit-slider-thumb 
+            -webkit-appearance: none
+            width: 14px
+            height: 27px
+            background: #006bcc
+            border-radius: 5px
+        &:focus 
+            outline: none 
+    input[type='range']::-moz-range-thumb
+        width: 14px
+        height: 27px
+        background: #006bcc
+        border-radius: 5px
+    input[type='range']::-ms-thumb
+        width: 14px
+        height: 27px
+        background: #006bcc
+        border-radius: 5px
+.rangeController__grades
+    height: 16px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 86px
+    font-size: 16px
+    line-height: 1.19
+.rangeController_dscr
+    width: 375px
+    font-size: 16px
+    line-height: 1.19
+    &:before
+        content: ''
+        display: block
+        float: left 
+        background-image: url('./icons/comma.png')
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: 0 4px
+        height: 45px
+        width: 20px
+        margin-right: 13px
+.iconControllers
+    width: 500px
+    display: flex
+.iconController
+    width: 240px
+    &:first-of-type
+        margin-right: 20px
+.iconController__title
+    height: 25px
+    margin-bottom: 30px
+    font-size: 25px
+    font-weight: bold
+    line-height: 1.2
+.iconController__items
+    height: 60px
+    width: 210px
+    display: flex
+    padding: 15px 15px
+    background-color: #fff  
+.iconController__item 
+    box-sizing: border-box
+    position: relative
+    height: 60px
+    width: 60px
+    margin-right: 15px
+    border: 1px solid #DBDBDB
+    border-radius: 8px
+    cursor: pointer
+    &:last-of-type
+        margin-right: 0  
+    img
+        position: absolute
+        &.body
+            height: 46px
+            width: 42px
+            bottom: 0
+            left: 8px
+        &.face
+            width: 42px
+            height: 20px
+            bottom: 20px
+            left: 8px
+.active
+    border: 2px solid #006bcc
+    &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 5px
+        height: 5px
+        background-color: #006bcc
+        border-radius: 50%
+        top: 3px
+        left: 3px
+@media screen and (max-width: 1280px)
+    .app
+        width: 777px
+    .view
+        width: 246px
+        padding: 52px 71px 62px 79px
+    .view__icons
+        height: 114px
+        margin-bottom: 49px
+    .view__icon
+        margin-right: 7px
+        padding: 7px 10px
+    .junior
+        height: 10px
+        padding: 8px 12px
+        font-size: 18px
+        line-height: 10px
+    .middle
+        height: 8px
+        padding: 5px 5px
+        font-size: 16px
+        line-height: 8px
+    .senior
+        height: 5px
+        padding: 5px 3px
+        font-size: 14px
+        line-height: 4px  
+    .view__guy 
+        height: 203px
+        img
+            &.body
+                height: 185px
+                width: 135px
+                left: 54px
+            &.face
+                left: 94px
+                top: 45px
+                height: 30px
+                width: 54px
+            &:last-of-type
+                height: 87px
+    .controllers
+        width: 335px
+        padding: 65px 27px 60px        
+    .rangeController
+        margin-bottom: 39px
+    .rangeController__title
+        height: 17px
+        margin-bottom: 20px
+        font-size: 16px
+    .rangeController__item
+        height: 154px
+        width: 281px
+        padding: 0 27px 28px
+        input
+            margin-top: 34px
+            margin-bottom: 25px
+    .rangeController__grades
+        height: 11px
+        margin-bottom: 58px
+    .rangeController_dscr
+        width: 251px
+        font-size: 10px
+        &:before
+            width: 13px
+            margin-right: 9px
+            background-size: 12px
+            background-position: 0 2px
+            height: 20px
+    .iconControllers
+        width: 335px
+    .iconController
+        width: 160px
+        &:first-of-type
+            margin-right: 13px
+    .iconController__title
+        height: 17px
+        margin-bottom: 20px
+        font-size: 18px
+    .iconController__items
+        height: 40px
+        width: 140px
+        padding: 10px 10px
+    .iconController__item 
+        height: 40px
+        width: 40px
+        margin-right: 10px
+        img
+            position: absolute
+            &.body
+                width: 26px
+                height: 31px
+                bottom: 0
+                left: 5px
+            &.face
+                width: 26px
+                height: 13px
+                bottom: 13px
+                left: 5px
+        &:after
+            width: 3px
+            height: 3px     
+    .active
+        border: 1px solid #006bcc
+//////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 1024px)
+    .app
+        width: 622px
+    .view
+        width: 197px
+        padding: 42px 57px 50px 63px
+    .view__icons
+        height: 91px
+        margin-bottom: 39px
+    .view__icon
+        margin-right: 6px
+        padding: 6px 8px
+    .junior
+        height: 8px
+        padding: 6px 8px
+        font-size: 16px
+        line-height: 10px
+    .middle
+        height: 8px
+        padding: 4px 4px
+        font-size: 12px
+        line-height: 8px
+    .senior
+        height: 4px
+        padding: 4px 4px
+        font-size: 10px   
+        line-height: 2px 
+    .view__guy 
+        height: 162px
+        img
+            &.body
+                height: 148px
+                width: 108px
+                left: 43px
+            &.face
+                left: 75px
+                top: 36px
+                height: 24px
+                width: 43px
+            &:last-of-type
+                height: 70px
+    .controllers
+        width: 268px
+        padding: 52px 22px 48px        
+    .rangeController
+        margin-bottom: 31px
+    .rangeController__title
+        height: 14px
+        margin-bottom: 16px
+        font-size: 16px
+    .rangeController__item
+        height: 123px
+        width: 225px
+        padding: 0 22px 22px
+        input
+            margin-top: 27px
+            margin-bottom: 20px
+        input[type='range']::-webkit-slider-thumb 
+            width: 12px
+            height: 23px
+        input[type='range']::-moz-range-thumb
+            width: 12px
+            height: 23px
+    .rangeController__grades
+        height: 9px
+        margin-bottom: 26px
+    .rangeController_dscr
+        width: 201px
+        font-size: 10px
+        &:before
+            width: 13px
+            margin-right: 9px
+            background-size: 10px
+            height: 25px
+    .iconControllers
+        width: 335px
+    .iconController
+        width: 128px
+        &:first-of-type
+            margin-right: 13px
+    .iconController__title
+        height: 17px
+        margin-bottom: 20px
+        font-size: 18px
+    .iconController__items
+        height: 32px
+        width: 112px
+        padding: 8px 8px
+    .iconController__item 
+        height: 32px
+        width: 32px
+        margin-right: 8px
+        img
+            &.body
+                width: 21px
+                height: 25px
+                bottom: 0
+                left: 4px
+            &.face
+                width: 21px
+                height: 10px
+                bottom: 10px
+                left: 4px
+
+@media screen and (max-width: 768px)
+    .app
+        width: 460px
+    .view
+        width: 145px
+        padding: 31px 42px 37px 47px
+    .view__icons
+        height: 67px
+        margin-bottom: 29px
+    .view__icon
+        margin-right: 5px
+        padding: 5px 6px
+    .junior
+        height: 5px
+        padding: 5px 5px
+        font-size: 12px
+        line-height: 5px
+    .middle
+        height: 4px
+        padding: 3px 2px
+        font-size: 10px
+        line-height: 3px
+    .senior
+        height: 4px
+        padding: 2px 2px
+        font-size: 8px   
+        line-height: 3px    
+    .view__guy 
+        height: 148px
+        img
+            &.body
+                height: 110px
+                width: 80px
+                left: 32px
+                bottom: 0
+            &.face
+                left: 55px
+                top: 55px
+                height: 18px
+                width: 32px
+            &:last-of-type
+                height: 52px
+    .controllers
+        width: 198px
+        padding: 38px 16px 35px        
+    .rangeController
+        margin-bottom: 23px
+    .rangeController__title
+        height: 10px
+        margin-bottom: 12px
+        font-size: 12px
+    .rangeController__item
+        height: 115px
+        width: 166px
+        padding: 0 16px 16px
+        input
+            margin-top: 20px
+            margin-bottom: 15px
+        input[type='range']::-webkit-slider-thumb 
+            width: 10px
+            height: 18px
+        input[type='range']::-moz-range-thumb
+            width: 10px
+            height: 18px
+    .rangeController__grades
+        height: 7px
+        margin-bottom: 14px
+        font-size: 12px
+    .rangeController_dscr
+        width: 149px
+        font-size: 10px
+        &:before
+            width: 10px
+            margin-right: 7px
+            height: 45px
+    .iconControllers
+        width: 248px
+    .iconController
+        width: 95px
+        &:first-of-type
+            margin-right: 10px
+    .iconController__title
+        height: 13px
+        margin-bottom: 15px
+        font-size: 13px
+    .iconController__items
+        height: 28px
+        width: 83px
+        padding: 6px 6px
+    .iconController__item 
+        height: 26px
+        width: 26px
+        margin-right: 6px
+        img
+            &.body
+                width: 16px
+                height: 18px
+                bottom: 0
+                left: 3px
+            &.face
+                width: 16px
+                height: 7px
+                bottom: 7px
+                left: 3px
+
+@media screen and (max-width: 480px)
+    .app-container
+        height: auto
+        display: block
+    .app
+        width: 100%
+        display: block
+    .view
+        height: 545px
+        width: 100%
+        padding: 0 21px 60px
+        box-sizing: border-box
+        background-color: #fff
+    .view__icons
+        height: 140px
+        margin-bottom: 46px
+        padding: 59px 19px 0
+    .view__icon
+        margin-right: 10px
+        background-color: #0978CF
+        border-radius: 5px
+    .junior
+        height: 15px
+        padding: 8px 14px
+        font-size: 16px
+        line-height: 16px
+    .middle
+        height: 10px
+        padding: 5px 8px
+        font-size: 14px
+        line-height: 12px
+    .senior
+        height: 6px
+        padding: 4px 4px
+        font-size: 12px   
+        line-height: 7px 
+    .view__guy 
+        height: 240px
+        position: relative
+        img
+            position: absolute
+            &.body
+                height: 216px
+                width: 158px
+                left: 64px
+                bottom: 25px
+            &.face
+                left: 115px
+                top: 45px
+                height: 34px
+                width: 56px
+            &:last-of-type
+                bottom: 0
+                height: 130px
+                width: 278px
+    .controllers
+        height: 683px
+        width: 100%
+        padding: 48px 22px 40px 20px
+        box-sizing: border-box
+        background-color: #fff
+        border: 10px solid #71BFFF          
+    .rangeController
+        height: 258px
+        margin-bottom: 54px
+    .rangeController__title
+        margin-bottom: 41px
+        font-size: 25px
+    .rangeController__item
+        width: 100%
+        padding: 0
+        background-color: #fff
+        input
+            margin-top: 0
+            margin-bottom: 38px
+            border-radius: 2px
+        input[type='range']::-webkit-slider-thumb 
+            width: 14px
+            height: 27px
+        input[type='range']::-moz-range-thumb
+            width: 14px
+            height: 27px
+    .rangeController__grades
+        margin-bottom: 86px
+        font-size: 16px
+    .rangeController_dscr
+        width: 100%
+        font-size: 16px
+        &:before
+            background-size: 15px
+            background-position: 0 5px
+            width: 20px
+            height: 55px
+    .iconControllers
+        width: 100%
+        display: block
+    .iconController__title
+        height: 25px
+        margin-bottom: 20px
+        font-size: 25px
+        font-weight: bold
+        line-height: 1.2
+    .iconController__items
+        height: 60px
+        width: 210px
+        display: flex
+        padding: 0
+        margin-bottom: 48px
+        &:last-of-type
+            margin-bottom: 46px  
+    .iconController__item 
+        box-sizing: border-box
+        position: relative
+        height: 60px
+        width: 60px
+        margin-right: 15px
+        border: 1px solid #DBDBDB
+        border-radius: 8px
+        cursor: pointer
+        &:last-of-type
+            margin-right: 0  
+        img
+            position: absolute
+            &.body
+                width: 42px
+                height: 46px
+                bottom: 0
+                left: 8px
+            &.face
+                width: 42px
+                height: 20px
+                bottom: 20px
+                left: 8px
+    .active
+        border: 2px solid #006bcc
+        &:after
+            content: ''
+            position: absolute
+            display: block
+            width: 5px
+            height: 5px
+            background-color: #006bcc
+            border-radius: 50%
+            top: 3px
+            left: 3px
+
+
